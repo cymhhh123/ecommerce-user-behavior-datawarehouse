@@ -1,0 +1,109 @@
+# ===============================================
+# 数据开发项目 .gitignore 文件
+# ===============================================
+
+# 1. 日志文件
+logs/
+*.log
+*.log.*
+
+# 2. 数据文件
+data/raw/
+data/processed/
+data/mock/*.pyc
+
+# 3. Python编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 4. 环境配置文件
+.env
+.env.local
+.env.*.local
+.env.*
+
+# 5. IDE和编辑器配置
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# 6. 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 7. 虚拟环境
+venv/
+env/
+env.local/
+
+# 8. 构建和依赖文件
+build/
+dist/
+*.egg-info/
+
+# 9. 测试相关文件
+.coverage
+.coverage.*
+.pytest_cache/
+test-results/
+
+# 10. 临时文件和缓存
+.tmp/
+temp/
+tmp/
+cache/
+*.tmp
+*.temp
+
+# 11. 部署文件
+deployment/.env
+deployment/*.key
+deployment/*.pem
+
+# 12. 监控和配置
+monitoring/secrets/
+config/local/
+
+# 13. Jupyter笔记本
+.ipynb_checkpoints/
+*.ipynb
+
+# 14. API和凭证
+api/keys/
+api/credentials/
+api/*.key
+
+# 15. 分析和报告
+analysis/reports/*.tmp
+analysis/dashboards/secrets/
+
+# 16. 数据库相关
+*.sql
+*.sqlite
+*.sqlite3
+
+# 17. Spark和Hadoop
+.sparkHistory/
+hadoop.tmp.dir/
+
+# 18. Airflow
+airflow/logs/
+airflow/airflow.cfg
+
+# 19. 其他
+*.pid
+*.seed
+*.pid.lock
+
+# 20. 敏感信息
+*.secret
+*.private
+*.key
+*.pem
+*.cer
