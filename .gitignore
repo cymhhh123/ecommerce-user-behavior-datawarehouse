@@ -107,3 +107,7 @@ airflow/airflow.cfg
 *.key
 *.pem
 *.cer
+# 保留所有空文件夹
+!*/
+# 排除.gitignore本身，避免循环
+!.gitignore
